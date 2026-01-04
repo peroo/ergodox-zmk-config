@@ -1,0 +1,21 @@
+/ {
+    /*
+     * Dummy kscan device.
+     * The XIAO BLE dongle has no keys, but ZMK requires one.
+     */
+    slicemk_button: slicemk_button {
+        compatible = "slicemk-button";
+        #gpio-cells = <2>;
+        gpio-map-mask = <0xffffffff 0xffffffc0>;
+        gpio-map-pass-thru = <0 0x3f>;
+        gpio-map = <0 0 &gpio0 2 GPIO_ACTIVE_LOW>;
+    };
+};
+
+&gpio0 {
+    status = "okay";
+};
+
+&gpiote {
+    status = "okay";
+};

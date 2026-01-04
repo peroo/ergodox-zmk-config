@@ -1,11 +1,16 @@
 manifest:
   remotes:
     - name: slicemk
-      url-base: https://github.com/slicemk
+      url-base: https://github.com/xudongzheng
+    - name: carrefinho                            # <--- add this
+      url-base: https://github.com/carrefinho     # <--- and this
   projects:
     - name: zmk
       remote: slicemk
-      revision: main
+      revision: v20250120-min
       import: app/west.yml
+    - name: prospector-zmk-module                 # <--- and these
+      remote: carrefinho                          # <---
+      revision: main                              # <---
   self:
     path: config

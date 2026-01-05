@@ -6,6 +6,7 @@
 include:
   - board: seeeduino_xiao_ble
     shield: slicemk_ergodox_dongle dongle_screen
+    snippet: studio-rpc-usb-uart
     artifact-name: dongle-screen
 
   - board: slicemk_ergodox_202108_green_left

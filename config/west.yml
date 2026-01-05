@@ -2,18 +2,19 @@ manifest:
   remotes:
     - name: slicemk
       url-base: https://github.com/xudongzheng
+    - name: peroo
+      url-base: https://github.com/peroo
     - name: carrefinho                            # <--- add this
       url-base: https://github.com/carrefinho     # <--- and this
     - name: janpfischer
       url-base: https://github.com/janpfischer    # <--- and this
   projects:
     - name: zmk
-      remote: slicemk
-      revision: v20250120-min
+      remote: peroo
+      revision: slicemk
       import: app/west.yml
     - name: zmk-dongle-screen                 # <--- and these
       remote: janpfischer                     # <---
-      #revision: main                          # <---
-      revision: 0.0.1
+      revision: main                          # <---
   self:
     path: config

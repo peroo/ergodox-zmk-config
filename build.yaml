@@ -7,3 +7,11 @@ include:
   - board: seeeduino_xiao_ble
     shield: slicemk_ergodox_dongle dongle_screen
     artifact-name: dongle-screen
+
+  - board: slicemk_ergodox_202108_green_left
+    shield: slicemk_ergodox_leftsingle
+    artifact-name: left
+
+  - board: slicemk_ergodox_202108_green_right
+    shield: slicemk_ergodox_rightsingle
+    artifact-name: right

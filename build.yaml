@@ -11,7 +11,14 @@ include:
   - board: slicemk_ergodox_202108_green_left
     shield: slicemk_ergodox_leftsingle
     artifact-name: left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n  -DCONFIG_ZMK_USB=n
+
 
   - board: slicemk_ergodox_202108_green_right
     shield: slicemk_ergodox_rightsingle
     artifact-name: right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n  -DCONFIG_ZMK_USB=n
+
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    artifact-name: screen-reset

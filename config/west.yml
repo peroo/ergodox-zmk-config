@@ -4,13 +4,16 @@ manifest:
       url-base: https://github.com/xudongzheng
     - name: carrefinho                            # <--- add this
       url-base: https://github.com/carrefinho     # <--- and this
+    - name: janpfischer
+      url-base: https://github.com/janpfischer    # <--- and this
   projects:
     - name: zmk
       remote: slicemk
       revision: v20250120-min
       import: app/west.yml
-    - name: prospector-zmk-module                 # <--- and these
-      remote: carrefinho                          # <---
-      revision: main                              # <---
+    - name: zmk-dongle-screen                 # <--- and these
+      remote: janpfischer                     # <---
+      #revision: main                          # <---
+      revision: 0.0.1
   self:
     path: config

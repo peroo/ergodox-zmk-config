@@ -5,6 +5,5 @@
 # "shield". Please see "readme.md" for more details.
 include:
   - board: seeeduino_xiao_ble
-    shield: slicemk_ergodox_dongle prospector_adapter
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    shield: slicemk_ergodox_dongle dongle_screen
+    artifact-name: dongle-screen

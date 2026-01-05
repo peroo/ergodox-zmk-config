@@ -11,6 +11,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 		layer_0 {
+      display-name = "Base";
 			bindings = <
 				&bootloader
 				&kp EQUAL        &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3   &kp NUMBER_4    &kp NUMBER_5  &kp GRAVE         &none           &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0      &kp MINUS
